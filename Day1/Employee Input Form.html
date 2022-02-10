@@ -8,43 +8,61 @@
 
 <body>
     <div>
-      <form>   
-        <label> Firstname </label>         
-        <input type="text" name="firstname" size="15"/> <br> <br>  
-        <label> Lastname: </label>         
-        <input type="text" name="lastname" size="15"/> <br> <br>
+      <form>
+      <table>
+        <tr>  
+          <td><label> Firstname </label></td>        
+          <td><input type="text" name="firstname" size="15"/></td>
+        </tr> 
+        <tr> 
+          <td><label> Lastname: </label></td>         
+          <td><input type="text" name="lastname" size="15"/></td>
+        </tr>
+        
+        <tr>
+          <td><label>Gender : </label> </td>
+          <td><input type="radio" name="male"/> Male   
+              <input type="radio" name="female"/>Female   
+          </td> 
+        </tr>
 
 
-        <label>   
-          Gender :  
-        </label> 
-        <input type="radio" name="male"/> Male   
-        <input type="radio" name="female"/>Female    
-        <br>  
-        <br> 
-
-        <label>   
-          Maritial Status:
-        </label> 
-        <input type = "radio" id = "matritialStatus" name = "matritialStatus" >Married
-        <input type = "radio" id = "matritialStatus" name = "matritialStatus" >Unmarried  
+        <tr>
+        <td><label>Maritial Status:</label></td> 
+        <td>
+          <input type = "radio" id = "matritialStatus" name = "matritialStatus" >Married
+          <input type = "radio" id = "matritialStatus" name = "matritialStatus" >Unmarried  
+        </td>
+        </tr>
         <br>  
         <br> 
 
 
         
-        <label> Name of Spouse: </label>         
-        <input type="text" name="spouseName" size="15"/> <br> <br>  
-        <label> Other Details: </label>         
-        <input type="text" name="others" size="15"/> <br> <br>
+        <tr>
+          <td><label> Name of Spouse: </label>    </td>     
+          <td><input type="text" name="spouseName" size="15"/></td> 
+        </tr>
+
+        <tr>
+          <td><label> Other Details: </label> </td>
+          <td><input type="text" name="others" size="15"/> </td>
+        </tr>
+                
          
+        <tr>
+          <td>
+            <input type="checkbox" id="termAndCondition" name = "termAndCondition" value = "accepted">
+            <label for = "termAndCondition" >I accept <a href = "">Terms and Conditons</a></label>
+          </td>
+        </tr>
 
-
-       <input type="checkbox" id="termAndCondition" name = "termAndCondition" value = "accepted">
-       <label for = "termAndCondition" >I accept <a href = "">Terms and Conditons</a></label><br><br>
-
-        <button type = "button">Reset</button>
-        <button type = "button">Save</button><br><br>
+       
+       <tr>
+         <td><button type = "button">Reset</button></td>
+         <td><button type = "button">Save</button><br><br></td>
+       </tr>
+      </table> 
       </form>
     
 </div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAY4/5 ASSIGNMENT3</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class="employeeInputForm">
+            <div class="caption">
+                <p>Employee Input Form</p>
+            </div>
+                <form onsubmit="return validateForm()">
+                    <table>
+                    <tr class="firstName">
+                        <td><label for="FirstName">Name<span>*</span></label></td>
+                        <td>
+                            <input type="text" id="FirstName" name="FirstName"><br>
+                            <label for="FirstName">FirstName</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" id="MiddleName" name="MiddleName"><br>
+                            <label for="MiddleName">MiddleName</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" id="LastName" name="LastName"><br>
+                            <label for="LastName">LastName</label>
+                        </td>
+                    </tr>
+                    <tr class="gender">
+                        <td><label for="male_gender">Gender<span>*</span></label></td>
+                        <td>
+                            <input type="radio" id="male_gender" value="male" name="gender"><label for="male_gender">Male</label><br>
+                            <input type="radio" id="female_gender" value="female" name="gender"><label for="female_gender">Female</label><br>
+                            <input type="radio" id="other_gender" value="other" name="gender"><label for="other_gender">Other</label><br>
+                        </td>
+                    </tr>
+                    <tr class="maritialStatus">
+                        <td><label>Maritial Status<span>*</span></label></td>
+                        <td>
+                            <select id="maritialStatus" name="maritialStatus" onchange="maritalStatusChange(this.value)">
+                                <option value="Single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="widowed">widowed</option>
+                                <option value="Divorced">Divorced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="spouseName">
+                        <td><label for="spouseName" >Spouse's Name</label></td>
+                        <td>
+                            <input type="text" id="spouseName" name="spouseName" readonly><br>
+                            <label for="spouseName">Name of Spouse</label>
+                        </td>
+                    </tr>
+                    <tr class="otherDetail">
+                        <td><label for="otherDetail">Other Detail</label></td>
+                        <td>
+                            <textarea id="otherDetail" name="otherDetail"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="tnc">
+                    <input type="checkbox" id="tncCheckbox" name="tncCheckbox"><label for="tncCheckbox">I accept <a href="#">Term and Conditons</a></label>
+                </div>
+                <div class="buttons"> 
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Save">
+                </div>
+                </form>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

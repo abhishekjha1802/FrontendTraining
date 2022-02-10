@@ -1,0 +1,1309 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.subNavBar {
+  position: absolute;
+  width: 80vw;
+  height: 60%;
+  top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.mNavbar{
+  visibility: collapse;
+}
+.logoContainer{
+  height: 90%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+.skinsiLogo{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.skinsiLogo img{
+  width: 100%;
+}
+
+.logo2{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.logo2 img{
+  width: 100%;
+  
+}
+
+.logo3{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.logo3 img{
+  width: 100%;
+}
+
+
+
+.menuContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+}
+.menuContainer a{
+  width: 35%;
+  height: 75%;
+  justify-content: center;
+  order: 0;
+  margin: 0px 2vw;
+}
+.menuContainer a img{
+  width: 100%;
+  height: 100%;
+}
+
+.menu{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu li {
+  list-style-type: none;
+  display: flex;
+}
+
+/* .menu li a:nth-child(1){
+
+}
+.menu li a:nth-child(2){
+  
+}
+.menu li a:nth-child(3){
+  
+} */
+
+.pagebody{
+  width: 100%;
+  height: 88%; 
+  position: absolute;   
+  top: 12%;   
+  overflow-y: auto;  
+  overflow-x: hidden;
+  background: #F5F5F5;
+}
+
+/* .card1{
+
+} */
+
+
+
+.image-container {
+  position: absolute;
+  width: 50vw;
+  height: 30vw;
+  left: 9.2%;
+  top: 2.2vw;
+  background-color: yellow;
+  overflow: hidden;
+}
+.image-container img{
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+/* #slide-1:target ~ .image-container {
+  
+}
+#slide-2:target ~ .image-container {
+  
+}
+#slide-3:target ~ .image-container {
+  
+} */
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.serviceName{
+  position: absolute;
+  width: 50%;
+  height: 4vw;
+  left: 9.2%;
+  top: 29.5vw;
+
+  display: flex;
+  justify-content: flex-start;
+  direction: row;
+  
+  padding: 0.9vw 1vw 0.9vw 2vw;
+  background:white;
+
+  margin: 0.1vw 0px;
+  border-bottom: 0.1vw solid #F5F5F5;
+}
+
+.serviceName p{
+  position: static;
+  left: 4.21%;
+  right: 50.66%;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 2vw;
+  
+  color: #424242;    
+}
+.additionalDetail{
+  position: absolute;
+  width: 50%;
+  height: 5.7vw;
+  left: 9.2%;
+  top: 33.5vw;
+  
+  padding: 0.9vw 1vw 0.9vw 2vw;
+  background:white;
+
+  margin: 0.1vw 0px;
+}
+
+.bodyOutline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: static;
+  width: 27.2vw;
+  height: 1.7vw;
+  left: 2.1vw;
+  top: 0.8vw;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0.5vw 0px;
+}
+.bodyOutline img{
+  width: 1vw;
+  height: 1vw;
+}
+.bodyOutline p{
+  
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  /* or 22px */
+  
+  
+  /* toothsi neutrals 1 */
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0.5vw
+}
+
+.accessTime{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: static;
+  width: 27.2vw;
+  height: 1.7vw;
+  left: 2.1vw;
+  top: 3.5vw;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0.5vw 0px;
+}
+.accessTime p{    
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  /* identical to box height, or 129% */
+  
+  
+  /* toothsi neutrals 1 */
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0.5vw;
+}
+.accessTime img{
+  width: 1vw;
+  height: 1vw;
+}
+
+
+.card2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  position: absolute;
+  width: 24.8%;
+  height: 40vw;
+  left: 62%;
+  top: 2.2vw;
+  background-color: white;
+  
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.04));
+  border-radius: 8px;
+}
+.card2 table{
+  width: 80%;
+  height: 30vw;
+  border-collapse: collapse;
+}
+.card2 table tr img{
+  position: absolute;
+  top:10%;
+  left: 5%;
+  width: 5vw;
+  height: 2vw;
+}
+.card2 button{
+  /* position: static; */
+  
+  position: absolute;
+  width: 90%;
+  height: 7%;
+  left: 50%;
+  top: 35vw;
+  left: 1vw;
+  background: #E03C31;
+  color: white;
+  border-radius: 8px;
+}
+.card2 label{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 2vw;
+  text-align: center;
+  color: #424242;
+}
+.card2 #discount{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 18px;
+  color: #077E13;
+}
+.card2 #discounted_price{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 18px;
+  text-align: right;
+  color: #212121;
+}
+
+.card2 #original_price{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.7vw;
+  line-height: 18px;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: #888888;
+}
+.card2 #offer_validity{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.5vw;
+  line-height: 15px;
+  color: #E03C31;
+}
+.card2 #first_line{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9vw;
+  line-height: 18px;
+  color: #212121;
+}
+.card2 #offer_suggestion{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8vw;
+  line-height: 18px;
+  color: rgba(66, 66, 66, 0.9);
+}
+
+
+
+
+
+.card3{
+  position: absolute;
+  width: 50%;
+  height: 13.5vw;
+  left: 9.2%;
+  top: 40vw;
+  display: flex;
+  background: #FFFFFF;
+}
+
+.card3 div:nth-child(1){
+  position: absolute;
+  width: 6.48vw;
+  height: 2vw;
+  left: 2.6vw;
+  top: 2vw;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1.58%;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  
+  /* toothsi neutrals 1 */
+  
+  color: #424242;
+  
+}
+.card3 div:nth-child(2){
+  position: absolute;
+  width: 18.7vw;
+  height: 7.5vw;
+  left: 2.6vw;
+  top: 4vw;
+}
+.card3 div:nth-child(2) img{
+  position: absolute;
+  width: 16vw;
+}
+.card3 div:nth-child(3){
+  position: absolute;
+  width: 28vw;
+  height: 2.5vw;
+  left: 19.58vw;
+  top: 4vw;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 140%;
+  /* or 20px */
+  
+  
+  /* toothsi neutrals 1 */
+  
+  color: #424242;
+}
+.card4{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5vw 2.5vw 1.5vw 2vw;
+  
+  position: absolute;
+  width: 50%;
+  height: 19vw;
+  left: 9.2%;
+  top: 54.5vw;
+  
+  background: #FFFFFF;
+}
+.card4 div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+  position: static;
+  width: 17.7vw;
+  height: 1.4vw;
+  left: 1vw;
+  top: 1.6vw;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 1vw 0px;
+}
+
+.card4 div:nth-child(1) div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.25vw 0.5vw;
+  
+  position: static;
+  width: 7.8vw;
+  height: 1.4vw;
+  
+  
+  background: rgba(10, 180, 27, 0.08);
+  border-radius: 0.25vw;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 1.25vw;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.9vw;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+
+  color: #077E13;
+
+}
+
+.card4 div:nth-child(1) div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.25vw 0.5vw;
+
+  position: static;
+  width: 9.7vw;
+  height: 1.4vw;
+  left: 8.2vw;
+  top: 0px;
+
+  background: rgba(10, 180, 27, 0.08);
+  border-radius: 0.25vw;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 1.25vw;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.9vw;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  
+  
+  color: #077E13;
+  
+}
+
+.card4 div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: static;
+  width: 22.9vw;
+  height: 13vw;
+  left: 1vw;
+  top: 4vw;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 1vw 0px;
+}
+
+.card4 div:nth-child(2) ul li{
+  position: static;
+  width: 21.5vw;
+  height: 1.5vw;
+  left: 1vw;
+  top: 0px;
+  list-style-type: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 100%;
+  /* or 22px */
+  
+  
+  color: rgba(0, 0, 0, 0.8);
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 1.25vw;
+}
+.card4 div:nth-child(2) ul li img{
+  position: static;
+  left: 0%;
+  right: 97.28%;
+  top: 34.85%;
+  bottom: 34.85%;
+
+
+/* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 12px;
+}
+
+.selectionCard form label{
+  position: static;
+  width: 123px;
+  height: 24px;
+  left: 16px;
+  top: 20px;
+  
+  /* P1 16 medium */
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  
+  /* toothsi neutrals 1 */
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.bestChoice{
+  position: static;
+  width: 359px;
+  height: 113px;
+  left: 16px;
+  top: 68px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+.bestChoice img{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 4px;
+  
+  position: absolute;
+  width: 90px;
+  height: 22px;
+  left: 28px;
+  top: 20px;
+  
+  /* toothsi red */
+  
+  background: #E03C31;
+  border-radius: 4px;
+}
+
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 756px){
+  .image-container{
+      position: absolute;
+      width: 100vw;
+      height: 45vh;
+      left: 0px;
+      top: 0px;
+
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 44.72%, rgba(33, 33, 33, 0.3) 100%);
+  }
+  .serviceName{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+      width: 100vw;
+      height: 10vh;
+      left: 0px;
+      top: 45vh;
+      background-color: #077E13;
+      background: #FFFFFF;
+      
+      /* Inside auto layout */
+      margin: 1px 0px;
+  }
+  .serviceName p{
+      height: 10vh;
+      left: 4.27%;
+      right: 4.27%;
+      top: 47vh;
+      
+      /* H3 20 semibold */
+      
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height */
+      
+      
+      /* toothsi neutrals 1 */
+      
+      color: #424242;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 8px 0px;
+  }
+  .additionalDetail{
+      width: 100vw;
+      height: 15vh;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px;
+      left: 0px;
+      top: 55.5vh;
+  }
+  .bodyOutline{
+      position: static;
+      width: 100vw;
+      height: 44px;
+      left: 16px;
+      top: 8px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 8px 0px;
+  }
+  .bodyOutline img{
+      position: absolute;
+      width: 16.78px;
+      height: 16px;
+      left: 16px;
+      top: 19px;
+  }
+  .bodyOutline p{
+      position: absolute;
+      width: 317.83px;
+      height: 44px;
+      left: 41.17px;
+      top: 16px;
+      
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      /* or 22px */
+      
+      
+      /* toothsi neutrals 1 */
+      
+      color: #424242;
+      
+  }
+  
+  .accessTime{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      
+      position: static;
+      width: 343px;
+      height: 18px;
+      left: 16px;
+      top: 76px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 16px 0px;
+  }
+  .accessTime p{    
+      position: static;
+      width: 121px;
+      height: 18px;
+      left: 24px;
+      top: 0px;
+      
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height, or 129% */
+      
+      
+      /* toothsi neutrals 1 */
+      
+      color: #424242;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 8px;
+  }
+  .accessTime img{
+      position: static;
+      width: 16px;
+      height: 16px;
+      left: 0px;
+      top: 0px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 8px;
+  }
+  .card2{
+    
+    
+    position: absolute;
+    width: 100vw;
+    height: 45vh;
+    left: 0px;
+    top: 72vh;
+    z-index: 1;
+  }
+  .card2 table{
+    width: 80%;
+    height: 30vw;
+    font-size: 18px;
+    top:18%;
+    border-collapse: collapse;
+    position: absolute;
+  }
+  .card2 table tr img{
+    
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    left: 2px;
+    top: -10%;
+    
+    /* toothsi red */
+    
+    background: #E03C31;
+    border-radius: 4px;
+  }
+  .card2 button{
+    position: absolute;
+    top:39vh;
+    left:5%;
+    width: 90%;
+    height: 5vh;
+    z-index: 20;
+  }
+  .card2 label{
+    position: absolute;
+    width: 123px;
+    height: 20px;
+    left: 0vw;
+    top: 1vh;
+    
+    /* P1 16 medium */
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    /* toothsi neutrals 1 */
+    
+    color: #424242;
+  }
+  .card2 #discount{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    color: #077E13;
+  }
+  .card2 #discounted_price{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    color: #212121;
+  }
+  
+  .card2 #original_price{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: right;
+    text-decoration-line: line-through;
+    color: #888888;
+  }
+  .card2 #offer_validity{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 15px;
+    color: #E03C31;
+  }
+  .card2 #first_line{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212121;
+  }
+  .card2 #offer_suggestion{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(66, 66, 66, 0.9);
+  }
+  
+  .card3{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 16px;
+      
+      position: absolute;
+      width: 100vw;
+      height: 320px;
+      left: 0px;
+      top: 892px;
+  }
+
+  .card3 div:nth-child(1){
+      position: static;
+      width: 97px;
+      height: 15px;
+      left: 4px;
+      top: 20px;
+      
+      /* P1 16 medium */
+      
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+      
+      text-align:start;
+      
+      /* toothsi neutrals 1 */
+      
+      color: #424242;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 4px 0px;
+      
+  }
+  .card3 div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      
+      position: static;
+      width: 100vw;
+      height: 172px;
+      left: 16px;
+      top: 128px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      margin: 8px 0px;
+  }
+  .card3 div:nth-child(2) img{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      
+      position: static;
+      width: 90vw;
+      height: 145px;
+      left: 16px;
+      top: 128px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      margin: 8px 0px;
+  }
+  .card3 div:nth-child(3){
+      position: static;
+      width: 343px;
+      height: 60px;
+      left: 16px;
+      top: 56px;
+      
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+      
+      
+      /* toothsi neutrals 1 */
+      
+      color: #424242;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 12px 0px;
+  }
+  .card4{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 16px;
+      
+      position: absolute;
+      width: 100vw;
+      height: 288px;
+      left: 0px;
+      top: 1220px;
+      
+      background: #FFFFFF;
+      
+  }
+  .card4 div:nth-child(1){
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      
+      position: static;
+      width: 268px;
+      height: 22px;
+      left: 16px;
+      top: 24px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 16px 0px;
+          
+  }
+  
+  .card4 div:nth-child(1) div:nth-child(1){
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 4px 8px;
+      
+      position: static;
+      width: 112px;
+      height: 22px;
+      left: 0px;
+      top: 0px;
+      
+      background: rgba(10, 180, 27, 0.08);
+      border-radius: 4px;
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 12px;
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 100%;
+  
+  }
+  
+  .card4 div:nth-child(1) div:nth-child(2){
+      
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 4px 8px;
+      
+      position: static;
+      width: 144px;
+      height: 22px;
+      left: 124px;
+      top: 0px;
+      
+      background: rgba(10, 180, 27, 0.08);
+      border-radius: 4px;
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 12px;
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 100%;
+      
+  }
+  
+  .card4 div:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      
+      position: static;
+      width: 343px;
+      height: 202px;
+      left: 16px;
+      top: 62px;
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 16px 0px;
+  }
+  
+  .card4 div:nth-child(2) ul li{
+      position: static;
+      width: 100vw;
+      height: 22px;
+      left: 1vw;
+      top: 0px;
+      list-style-type: none;
+      
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      /* or 22px */
+      
+      
+      color: rgba(0, 0, 0, 0.8);
+      
+      
+      /* Inside auto layout */
+      
+      flex: none;
+      order: 1;
+      flex-grow: 1;
+      margin: 0px 1.25vw;
+  }
+  .card4 div:nth-child(2) ul li img{
+      position: static;
+      left: 0%;
+      right: 97.28%;
+      top: 34.85%;
+      bottom: 34.85%;
+  
+  
+  /* Inside auto layout */
+  
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 12px;
+  }
+  .navBar{
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      padding: 16px 20px;
+      
+      position: absolute;
+      width: 100vw;
+      height: 86px;
+      left: 0px;
+      top: 0px;
+  }
+
+  .subNavBar{
+      visibility: collapse;
+  }
+
+  .mNavbar{
+      visibility: visible;
+      height:80%;
+      width: 95%;
+      margin:2%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+  }
+  .description{
+      width: 200px;
+      height: 30px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+  }
+  .back{
+      width: 24px;
+      height: 24px;
+      margin-right: 64px;
+  }
+
+  
+}
+

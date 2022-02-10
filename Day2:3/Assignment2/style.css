@@ -1,0 +1,84 @@
+body{
+    max-width:100%;
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.gallery{
+    position: relative;
+    width: 98%;
+    height: 98%;
+    margin:0px 8px;
+    
+}
+.imageContainer{
+    width: 40%;
+    height: 100%;
+    transition:all 0.5s;
+    z-index:1;
+    position: absolute;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.detail{
+    width:70%;
+    height: 10%;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.5; 
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition:all 1s;
+}
+.detail p{
+    text-align: center;
+    font-size: 24px;
+    font-family: Poppins;
+    color: white;
+}
+
+
+.gallery div:nth-child(1){
+    left: 60%;
+}
+.gallery div:nth-child(2){
+    left: 50%;
+}
+.gallery div:nth-child(3){
+    left: 40%;
+}
+.gallery div:nth-child(4){
+    left: 30%;
+}
+.gallery div:nth-child(5){
+    left: 20%;
+}
+.gallery div:nth-child(6){
+    left: 10%;
+}
+
+
+.imageContainer:hover{
+    z-index: 2;
+    transform: scaleX(1.2);
+}
+.imageContainer:hover .detail{
+    visibility: visible;
+    transform: scaleX(0.8);
+}
+

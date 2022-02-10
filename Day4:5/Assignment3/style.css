@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin:32px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url("background.webp");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.employeeInputForm{
+    width: 40vw;
+    height: 90vh;
+    background-color: linen;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+
+
+.employeeInputForm  .caption{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.employeeInputForm .caption p{
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: Poppins;
+    margin: 0px 24px;
+}
+
+.employeeInputForm form{
+    width: 100%;
+    height: 100%;
+}
+.employeeInputForm form table{
+    width: 100%;
+    height: 75%;
+    margin: 0px 24px
+}
+tr td:nth-child(1){
+    width: 30%;
+}
+tr td:nth-child(2){
+    width: 70%;
+}
+
+.tnc{
+    width: 100%;
+    margin: 16px 24px;
+    font-family: Poppins; 
+}
+.tnc input{
+    margin: 24px 8px 24px 0px;
+    
+}
+
+.buttons {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.buttons input{
+    width:35%;
+    height:60%;
+    margin: 0px 24px 0px 24px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+.buttons input:hover{
+   background-color: grey;
+}
+
+input[type="text"]{
+    width: 85%;
+    height: 45%;
+    border-radius: 5px;
+}
+select{
+    width: 85%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 85%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+span{
+    color: red;
+}
+
+
