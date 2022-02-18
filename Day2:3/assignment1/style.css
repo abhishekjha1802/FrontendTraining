@@ -706,12 +706,16 @@
 }
 
 @media screen and (max-width: 756px){
+  .pagebody{
+    top: 7%;
+  }
   .image-container{
       position: absolute;
       width: 100vw;
       height: 45vh;
       left: 0px;
       top: 0px;
+      background-color: #077E13;
 
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 44.72%, rgba(33, 33, 33, 0.3) 100%);
   }
@@ -921,7 +925,7 @@
     width: 123px;
     height: 20px;
     left: 0vw;
-    top: 1vh;
+    top: 3vh;
     
     /* P1 16 medium */
     
@@ -1266,11 +1270,11 @@
       flex-direction: row;
       justify-content:center;
       align-items: center;
-      padding: 16px 20px;
+      padding: 0px 20px;
       
       position: absolute;
       width: 100vw;
-      height: 86px;
+      height: 60px;
       left: 0px;
       top: 0px;
   }

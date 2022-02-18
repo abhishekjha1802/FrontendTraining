@@ -1,0 +1,520 @@
+.App {
+  text-align: center;
+  background-color: #CED2DC;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body{
+  background-color: #CED2DC;
+}
+
+.startGame{
+  position: absolute;
+  width: 50vw;
+  height: 45vh;
+  left: 25vw;
+  top: 27.5vh;
+  
+  
+  background: #FFFFFF;
+  border: 1px solid #F7F7F7;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1Card{
+  position: absolute;
+  height: 25%;
+  width: 80%;
+  top:10%;
+  background-color: #DCF6E4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.player1Card div{
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  top:5%;
+  left:20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.player2Card{
+  position: absolute;
+  height: 25%;
+  width: 80%;
+  top:40%;
+  border-radius: 10px;
+  background-color: #F7EFD5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+.player2Card div{
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  left:20%;
+  top:5%;
+  display: flex;
+  flex-direction: column;
+}
+.buttonStartGame{
+  position: absolute;
+  height: 20%;
+  width: 80%;
+  top:70%;
+}
+.buttonStartGame input{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 5%;
+  right: 0%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  background: #4B7BFF;
+  border-radius: 12px;
+  border: none;
+}
+
+.startGame div image{
+  position: absolute;
+  width: 20%;
+  height: 90%;
+  top:5%
+}
+.player1Card div p{
+  position: absolute;
+  top:1%;
+  left:1%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: #869189;
+}
+.player2Card div p{
+  position: absolute;
+  top:1%;
+  left:1%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: #869189;
+}
+
+.player1Card div input{
+  position: absolute;
+  top:50%;
+  width: 90%;
+  height: 40%;
+  border: none;
+  border-bottom: 1px solid #949494;
+  background-color: transparent;
+  padding: 0%;
+}
+
+.player2Card div input{
+  position: absolute;
+  top:50%;
+  width: 90%;
+  height: 40%;
+  border: none;
+  border-bottom: 1px solid #949494;
+  background-color: transparent;
+}
+.Grid{
+  position: absolute;
+  width: 90vh;
+  height: 40vw;
+  left:5%;
+  top:5%;
+  background-color: #84A4FB;
+  border-radius: 10px;
+}
+
+.Board{
+  position: absolute;
+  width: 45vw;
+  height: 90vh;
+  left: 5vw;
+  top:5vh;
+  background-color: #84A4FB;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.Row{
+  width: 90%;
+  height: 9%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+.Board .Row:nth-child(1){
+  margin-top: 64px;
+}
+
+.Cell{
+  height: 100%;
+  width: 10%;
+  margin: 8px;
+}
+.Cell div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.Board .Row .Cell:nth-child(1){
+  margin-left: 64px;
+}
+
+.header{
+  position: absolute;
+  left:55%;
+  top:50%;
+}
+.Game{
+  width: 100vw;
+  height: 100vh;
+  background-color: #CED2DC;
+}
+.ScoreCard{
+  position: absolute;
+  width: 45vw;
+  height: 90vh;
+  left: 49vw;
+  top:5vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.scoreCardHeader{
+  position: absolute;
+  width: 100%;
+  
+  top:7%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #424242;
+}
+.gameNo{
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top:18%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: center;
+  
+  color: #424242;
+}
+.winMsg{
+  position: absolute;
+  width: 100%;
+  top:13%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  flex-direction: row;
+  justify-content: center;
+  
+  color: red;
+}
+
+.PlayerDetail{
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  top: 25%;
+  left:10%;
+}
+.PlayerDetail div:nth-child(1){
+  position: absolute;
+  width: 98%;
+  height: 20%;
+  left: 1%;
+  top:2%;
+  background-color: #DCF6E4;
+  border-radius: 10px;
+}
+.PlayerDetail  img{
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  left: 0%;
+  top:0%;
+}
+.playerNo{
+  position: absolute;
+  width: 35%;
+  height: 10%;
+  left: 20%;
+  top:2%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #869189;
+}
+.playerName{
+  position: absolute;
+  width: 35%;
+  height: 10%;
+  left: 20%;
+  top:25%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+}
+.playerScoreTitle{
+  position: absolute;
+  width: 15%;
+  height: 10%;
+  left: 75%;
+  top:2%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #869189;
+}
+.playerScore{
+  position: absolute;
+  width: 15%;
+  height: 10%;
+  left: 75%;
+  top:25%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+}
+.startGameButton{
+  position: absolute;
+  width: 70%;
+  height: 20%;
+  left: 15%;
+  top:55%;
+  background-color: #4B7BFF;
+  color: white;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+.endTournamentButton{
+  position: absolute;
+  width: 70%;
+  height: 20%;
+  left: 15%;
+  top:80%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlayerDetail div:nth-child(2){
+  position: absolute;
+  width: 98%;
+  height: 20%;
+  left: 1%;
+  top:25%;
+  background-color: #F7EFD5;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 912px){
+    .startGame{
+      width: 95vw;
+      height: 60vh;
+      left: 2.5vw;
+      top: 20vh;
+    }
+
+    .player1Card div{
+      position: absolute;
+      
+      width: 65%;
+      top:5%;
+      left:35%;
+      
+    }
+    .player2Card div{
+      position: absolute;
+      width: 65%;
+      left:35%;
+    }
+
+    .Board{
+      position: absolute;
+      width: 90vw;
+      height: 50vh;
+      left: 5vw;
+      top:2.5vh;
+      background-color: #84A4FB;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    .ScoreCard{
+      position: absolute;
+      width: 90vw;
+      height: 60vh;
+      left: 5vw;
+      top:54vh;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    
+    .Row{
+      width: 98%;
+      height: 9%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 4px;
+    }
+    .Board .Row:nth-child(1){
+      margin-top: 32px;
+    }
+    .Board .Row .Cell:nth-child(1){
+      margin-left:8px;
+    }
+    .scoreCardHeader{
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      top:3%;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 100%;
+      line-height: 36px;
+      /* identical to box height */
+    
+      text-align: center;
+    
+      color: #424242;
+    }
+
+    
+    .playerNo{
+      position: absolute;
+      width: 35%;
+      left: 20%;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .playerName{
+      position: absolute;
+      width: 35%;
+      
+      left: 20%;
+      
+      
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .playerScoreTitle{
+      
+      font-size: 12px;
+      line-height: 18px;
+      
+    }
+    .playerScore{
+      
+      font-size: 14px;
+      line-height: 20px;
+     
+    }
+
+
+    .gameNo{
+      
+      top:18%;
+      
+      font-size: 14px;
+      line-height: 20px;
+      
+    }
+    .winMsg{
+      position: absolute;
+      width: 100%;
+      top:12%;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80%;
+      line-height: 20px;
+      flex-direction: row;
+      justify-content: center;
+      
+      color: red;
+    }
+    
+
+}
+
+ 
